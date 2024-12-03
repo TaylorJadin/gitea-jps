@@ -1,20 +1,20 @@
 type: install
-id: docker-jps-starter
+id: gitea
 version: '1.0'
 appVersion: latest
-name: Docker JPS Starter
-logo: https://reclaimcloud-reclm.cdn.jelastic.net/wp-content/uploads/2020/06/cropped-Reclaim-Cloud-Logo-New.png
-homepage: https://reclaim.cloud
+name: Gitea
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gitea_Logo.svg/640px-Gitea_Logo.svg.png
+homepage: https://gitea.com
 categories: 
 - apps/education
 description: 
-  text: "A sentence or two long description should go here."
-  short: "A short description."
+  text: "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD "
+  short: "A self-hostable GitHub alternative."
 
 globals:
-  shortname: starter-app
-  path: /root/starter-app
-  repo: https://github.com/taylorjadin/docker-jps-starter
+  shortname: gitea
+  path: /root/gitea
+  repo: https://github.com/taylorjadin/gitea-jps
 
 nodes:
   nodeType: dockerengine
