@@ -12,7 +12,7 @@ services:
       - LETSENCRYPT_EMAIL=${EMAIL}
     restart: always
     volumes:
-      - ./gitea:/data
+      - ./data:/data
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
