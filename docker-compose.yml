@@ -6,6 +6,9 @@ services:
     environment:
       - USER_UID=1000
       - USER_GID=1000
+      - GITEA__SERVER__DOMAIN=${DOMAIN}
+      - GITEA__SERVER__SSH_DOMAIN=${DOMAIN}
+      - GITEA__SERVER__ROOT_URL=https://${DOMAIN}/
       - VIRTUAL_PORT=3000
       - VIRTUAL_HOST=${DOMAIN}
       - LETSENCRYPT_HOST=${DOMAIN}
