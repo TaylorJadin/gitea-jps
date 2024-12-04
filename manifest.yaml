@@ -105,3 +105,8 @@ addons:
 success: | 
   **${env.displayName}**: [https://${env.domain}/](https://${env.domain}/)
   - If you want to map a custom domain, point an A record at **${nodes.cp.extIPs}** then use the **Domain Configuration** Add-On to change the domain name and issue a new Let's Encrypt cert.
+  - Use the **Update** add-on to upgrade to the lastest version of the application.
+  - Note that the first account registered will have administrator privileges. Make sure to take a moment to register that account now.
+  - Our installer requires manual confirmation of new account registrations, but that setting can be changed by editing the file at `/root/gitea/.env`. After editing the file stop and start the environment to apply the changes.
+  - Further configruation changes to Gitea can be made by editing the file at `/roo/gitea/data/gitea/conf/app.ini`
+  - Further configuration changes to Gitea can be made by 
